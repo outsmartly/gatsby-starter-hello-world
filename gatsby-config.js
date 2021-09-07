@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  assetPrefix: `/static/${process.env.BUILD_ID}`,
+  plugins: [
+    {
+      resolve: "gatsby-plugin-asset-path"
+    }
+  ]
 }
