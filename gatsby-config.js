@@ -6,7 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  assetPrefix: `static/${process.env.DEPLOY_ID}`,
+  assetPrefix: `assets/${process.env.DEPLOY_ID}`,
   plugins: [
     {
       resolve: "gatsby-plugin-asset-path"
